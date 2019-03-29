@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Movies</title>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar contains movie genres -->
+    <ul id="genreList">
+      <li class="genreItem">
+        <a href="#" id="main-title"><i class="fas fa-carrot"></i></a>
+      </li>
+      <li class="genreItem">
+        <a href="#" id="action" onclick="return chooseGenre(this.id);"
+          >Aksiyon</a
+        >
+      </li>
+      <li class="genreItem">
+        <a href="#" id="animation" onclick="return chooseGenre(this.id);"
+          >Animasyon</a
+        >
+      </li>
+      <!-- <li class="genreItem"><a href="#" id="documentary" onclick="return chooseGenre(this.id);">Belgesel</a></li> -->
+      <li class="genreItem">
+        <a href="#" id="scifi" onclick="return chooseGenre(this.id);"
+          >Bilim Kurgu</a
+        >
+      </li>
+      <li class="genreItem">
+        <a href="#" id="biography" onclick="return chooseGenre(this.id);"
+          >Biyografik</a
+        >
+      </li>
+      <li class="genreItem">
+        <a href="#" id="drama" onclick="return chooseGenre(this.id);">Dram</a>
+      </li>
+      <li class="genreItem">
+        <a href="#" id="fantastic" onclick="return chooseGenre(this.id);"
+          >Fantastik</a
+        >
+      </li>
+      <!-- <li class="genreItem"><a href="#" id="youth" onclick="return chooseGenre(this.id);">Gençlik</a></li> -->
+      <li class="genreItem">
+        <a href="#" id="thriller" onclick="return chooseGenre(this.id);"
+          >Gerilim</a
+        >
+      </li>
+      <li class="genreItem">
+        <a href="#" id="comedy" onclick="return chooseGenre(this.id);"
+          >Komedi</a
+        >
+      </li>
+      <!-- <li class="genreItem"><a href="#" id="cult" onclick="return chooseGenre(this.id);">Kült</a></li>
+    <li class="genreItem"><a href="#" id="adventure" onclick="return chooseGenre(this.id);">Macera</a></li>
+    <li class="genreItem"><a href="#" id="detective" onclick="return chooseGenre(this.id);">Polisiye</a></li>
+    <li class="genreItem"><a href="#" id="romance" onclick="return chooseGenre(this.id);">Romantik</a></li>
+    <li class="genreItem"><a href="#" id="war" onclick="return chooseGenre(this.id);">Savaş</a></li>
+    <li class="genreItem"><a href="#" id="crime" onclick="return chooseGenre(this.id);">Suç</a></li> -->
+    </ul>
+
+    <!-- Wrapper for filter tools and movie list -->
+    <div>
+      <div id="filter-tools-div">
+        <input
+          type="text"
+          class="filter-tool"
+          id="movie-filter"
+          placeholder="Filtrele"
+        />
+        <button type="button" class="filter-tool" id="random-movie-button">
+          <i class="fas fa-random"></i>
+        </button>
+      </div>
+
+      <div id="genre-title">
+        <h2><i class="fas fa-film"></i></h2>
+      </div>
+
+      <div class="container" id="movie-list-div"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

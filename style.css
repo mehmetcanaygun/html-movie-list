@@ -1,0 +1,109 @@
+body {
+  font-family: "Segoe UI", Tahome, Geneva, Verdana, sans-serif;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#genreList {
+  overflow: hidden;
+  background-color: #000000;
+  border-bottom: 3px solid #804495;
+}
+
+.genreItem {
+  float: left;
+}
+
+.genreItem a {
+  display: block;
+  color: #804495;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.genreItem a:hover {
+  background-color: #804495;
+  color: #fff;
+}
+
+.chosen-genre-item {
+  margin-bottom: 1px;
+  padding: 10px;
+  color: #804495;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.movie-info {
+  color: #ffffff;
+}
+
+.trailer-link {
+  text-decoration: none;
+  color: #804495;
+}
+
+.trailer-link:hover {
+  color: #fff;
+}
+
+#main-title {
+  background-color: #804495;
+  color: #fff;
+}
+
+#main-title:hover {
+  background-color: #804495;
+  font-weight: normal;
+}
+
+.container {
+  width: 100%;
+  margin: 10px auto;
+  text-align: left;
+}
+
+#filter-tools-div {
+  margin: 10px auto 10px auto;
+  width: 100%;
+  text-align: center;
+}
+
+.filter-tool {
+  width: 20rem;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #000;
+  font-size: 1rem;
+  border: 3px solid #804495;
+}
+
+#random-movie-button {
+  color: #804495;
+  width: 6rem;
+}
+
+button:focus,
+input:focus {
+  outline: none;
+}
+
+#genre-title {
+  color: #ffffff;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
